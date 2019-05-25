@@ -1,0 +1,77 @@
+package com.codistan.Lesson9;
+
+import java.util.Scanner;
+
+public class MoreControlStatment {
+
+	public static void main(String[] args) {
+		Scanner myScanner = new Scanner(System.in);
+
+		System.out.println("Please enter starting number: ");
+		int startNum = myScanner.nextInt();
+		
+		System.out.println("Please enter ending number: ");
+		int endNum = myScanner.nextInt();
+		
+		System.out.println("Do you want to print even or odd number?: ");
+		myScanner.nextLine();   //cleare the cach, get rid enter cach
+		
+		String choise = myScanner.nextLine();
+		
+		while(startNum <=endNum) {
+			
+			if(choise.trim().toLowerCase().equals("even")) {
+				
+				if (startNum%2==0) {
+					System.out.println(startNum);
+					
+				}
+				} else if((choise.trim().toLowerCase().equals("odd"))) {
+					if(startNum%2==1) {
+						System.out.println(startNum);
+					}
+					
+				}
+			startNum++;
+			
+			}
+		
+		
+		
+		//System.out.println("This number is : " + even);
+	//	System.out.println("This number is : " + odd);
+			
+		// Please ask from user a range; starting number and ending number, and ask if
+		// we need to print even or odd numbers.
+		// Based on the input print all the numbers to the console.
+
+		// System.out.println("Please Enter your Input: ");
+		// String yourInput = myScanner.nextLine();
+		/*
+		 * System.out.println("yourInput " + yourInput);
+		 * 
+		 * System.out.println("Please Enter your Input: "); String yourInput2 =
+		 * myScanner.nextLine(); System.out.println("Please write: " + " " + yourInput +
+		 * "and " + yourInput2);
+		 */
+
+		/*
+		 * int a = '1';
+		 * 
+		 * if( a%2 ==0) { System.out.println("your number is even");
+		 * 
+		 * } else { System.out.println("your number is odd "); }
+		 */
+
+		/*
+		 * int counter = 0;
+		 * 
+		 * while(counter <=100) {
+		 * 
+		 * System.out.println(counter + " ,"); counter+=2; }
+		 */
+
+	}
+
+}
+	
